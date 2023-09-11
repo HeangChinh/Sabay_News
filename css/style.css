@@ -448,6 +448,7 @@ img.footer-logo{
 #footer .about ul li, #footer .about ul li a {
     height: 40px;
     display: block;
+    border-radius: 50%;
 }
 #footer .about ul li {
     margin: 0;
@@ -455,7 +456,7 @@ img.footer-logo{
     list-style: none;
     position: absolute;
     top: 0;
-    background-size: 158%;
+    background-size: 158%;    
 }
 #footer .list-socail {
     font-size: 24px;
