@@ -204,7 +204,7 @@ ul{
     width: 13px;
 }
 
-/*======== Top right Ads ======= */
+/*Top right Ads */
 #banner #top-right-ads{
     float: right;
     width: 300px;
@@ -528,6 +528,9 @@ img.footer-logo{
     background: url('../images/brands.png') -12px -489px;
     background-size: auto;
 }
+/*========================================================== Entertainment Pages*/
+
+
 
 /*========================================================== Responsive*/
 @media (min-width: 1200px) {
@@ -789,4 +792,3 @@ img.footer-logo{
             text-align: center;
         }
 }
-/*==================================================== End Responsive */
