@@ -658,8 +658,12 @@ img.footer-logo{
             right: 0;
             padding: 1px 0 0 0;
             background-color: #000000;
-            display: none;
+            display: block;
+            transition: 0.4s;
+            height: 0;
+            overflow: hidden;
         }
+        
         .navbar-header{
             height: 50px;
             float: left;
