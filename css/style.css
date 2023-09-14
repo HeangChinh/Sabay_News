@@ -20,6 +20,14 @@ ul{
     padding-left: 15px;
     padding-right: 15px;
 }
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row > *{
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /*===================================== Header */
 #top {
     background-color: #161616;
@@ -68,7 +76,6 @@ ul{
     line-height: 1.7;
     letter-spacing: 0.01px;
     color: rgba(255, 255, 255, 0.8);
-    transition: 0.3s;
 }
 #menu .nav .category a{
     font-family: 'Koulen', Arial, Helvetica, sans-serif;
@@ -79,6 +86,7 @@ ul{
 #menu .nav li a:hover{
     color: #ffffff;
     background-color: #fa1939;
+    transition: 0.3s;
 }
 #menu .nav .activehome a{
     background-color: #D90C16;
@@ -234,7 +242,7 @@ ul{
 .tab-item .nav-tab .title{
     color: #ffffff;
     width: fit-content;
-    height: 46px;
+    height: 45px;
     font-size: 18px;
     font-family: 'Koulen', Arial, Helvetica, sans-serif;
 }
@@ -529,8 +537,48 @@ img.footer-logo{
     background-size: auto;
 }
 /*========================================================== Entertainment Pages*/
+/* Left content */
+.left-content{
+    width: calc(100% - 325px);
+    min-height: 300px;
+    float: left;
+}
+.left-content #tab-entertainment{
+    margin-top: 15px;
+}
+.left-content .tab-content{
+    padding: 0;
+    width: 100%;
+}
+#entertainment .tab-content{
+    padding: 0;
+}
+#posts-list{
+    padding: 25px;
+}
 
-
+/* switch list-grid */
+.left-content .nav-tab{
+    float: right;
+    width: 100%;
+}
+.left-content .nav-tab .title{
+    float: left;
+}
+.nav-tab .active i{
+    color: black;
+}
+.switch-view-list{
+    float: right;
+}
+.switch-view-list i{
+    color: #8d8d8d;
+    font-size: 14px;
+    padding: 19px 12px 5px 10px;
+}
+.switch-view-list i:hover{
+    color: black;
+}
 
 /*========================================================== Responsive*/
 @media (min-width: 1200px) {
@@ -794,5 +842,22 @@ img.footer-logo{
             display: block;
             width: 100%;
             text-align: center;
+        }
+        /* Entertainment page*/
+        #posts-list{
+            padding: 15px;
+        }
+        .mean-post{
+            padding: 0 10px;
+        }
+        #posts-list .mean-post .item{
+            padding: 0 5px;
+        }
+
+        .col-xs-6{
+            width: 50%;
+        }
+        .left-content{
+            width: 100%;
         }
 }
