@@ -2,6 +2,7 @@ body{
     font-family: 'Battambang', Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: #F6F6F6;
+    font-size: 15px;
 }
 a{
     text-decoration: none;
@@ -556,7 +557,41 @@ img.footer-logo{
 #posts-list{
     padding: 25px;
 }
+#posts-list .title{
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    line-height: 26px;
+}
+.list-items .title .small{
+    font-weight: normal;
+    margin-left: 2px;
+}
+.list-items .detail{
+    margin: 0;
+    line-height: 22.4px;
+}
+#posts-list .mean-post .item{
+    overflow: hidden;
+}
+#posts-list .list-items .list-img {
+    float: left;
+    padding-right: 0;
+}
+#posts-list .list-items .title{
+    border-bottom: 1px solid #dddddd;
+}
+.list-items .item{
+    margin-bottom: 15px;
+}
+.list-items .row > *{
+    padding: 0;
+}
 
+#posts-list .list-items {
+    margin-top: 30px;
+    
+}
 /* switch list-grid */
 .left-content .nav-tab{
     float: right;
@@ -567,6 +602,7 @@ img.footer-logo{
 }
 .nav-tab .active i{
     color: black;
+    cursor: default;
 }
 .switch-view-list{
     float: right;
@@ -601,6 +637,9 @@ img.footer-logo{
     .col-sm-6{
         width: 50%;
     }
+    .col-sm-12{
+        width: 100%;
+    }
     .hot-news-items .row{
         margin: -20px 0 0 0;
     }
@@ -615,13 +654,15 @@ img.footer-logo{
 @media (max-width: 992px) {
     .hot-news-ads{
         display: none;
-
     }
     .hot-news-items{
         width: 100%;
     }
     .hot-news-items .item{
         padding: 0 5px;
+    }
+    #posts-list .list-items .list-img{
+        padding-right: 15px;
     }
 }
 @media (min-width: 768px) {
@@ -853,11 +894,20 @@ img.footer-logo{
         #posts-list .mean-post .item{
             padding: 0 5px;
         }
-
+        .left-content .nav-tab .title a{
+            padding: 10px 0 10px 15px;
+        }
         .col-xs-6{
             width: 50%;
         }
         .left-content{
             width: 100%;
+        }
+        .switch-view-list{
+            display: none;
+        }
+        #posts-list .title{
+            font-size: 18px;
+            font-weight: normal;
         }
 }
