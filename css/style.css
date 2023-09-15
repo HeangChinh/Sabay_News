@@ -611,6 +611,7 @@ img.footer-logo{
     color: #8d8d8d;
     font-size: 14px;
     padding: 19px 12px 5px 10px;
+    cursor: pointer;
 }
 .switch-view-list i:hover{
     color: black;
