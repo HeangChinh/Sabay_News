@@ -548,50 +548,20 @@ img.footer-logo{
     margin-top: 15px;
 }
 .left-content .tab-content{
-    padding: 0;
+    padding: 25px;
     width: 100%;
 }
 #entertainment .tab-content{
     padding: 0;
 }
-#posts-list{
-    padding: 25px;
-}
-#posts-list .title{
+/* tab-content */
+.mean-posts .item .title{
     font-size: 18px;
-    margin: 0 0 10px 0;
     font-weight: 600;
     line-height: 26px;
-}
-.list-items .title .small{
-    font-weight: normal;
-    margin-left: 2px;
-}
-.list-items .detail{
-    margin: 0;
-    line-height: 22.4px;
-}
-#posts-list .mean-post .item{
-    overflow: hidden;
-}
-#posts-list .list-items .list-img {
-    float: left;
-    padding-right: 0;
-}
-#posts-list .list-items .title{
-    border-bottom: 1px solid #dddddd;
-}
-.list-items .item{
-    margin-bottom: 15px;
-}
-.list-items .row > *{
-    padding: 0;
+    margin: 10px 0;
 }
 
-#posts-list .list-items {
-    margin-top: 30px;
-    
-}
 /* switch list-grid */
 .left-content .nav-tab{
     float: right;
@@ -661,9 +631,6 @@ img.footer-logo{
     }
     .hot-news-items .item{
         padding: 0 5px;
-    }
-    #posts-list .list-items .list-img{
-        padding-right: 15px;
     }
 }
 @media (min-width: 768px) {
@@ -886,20 +853,16 @@ img.footer-logo{
             text-align: center;
         }
         /* Entertainment page*/
-        #posts-list{
-            padding: 15px;
-        }
-        .mean-post{
-            padding: 0 10px;
-        }
-        #posts-list .mean-post .item{
-            padding: 0 5px;
-        }
-        .left-content .nav-tab .title a{
-            padding: 10px 0 10px 15px;
-        }
-        .col-xs-6{
+        .col-sm-6{
             width: 50%;
+        }
+        #posts-list .title{
+            font-size: 17px;
+            font-weight: normal;
+            padding-right: 15px;
+        }
+        .left-content .tab-content{
+            padding: 20px 0 0 0;
         }
         .left-content{
             width: 100%;
@@ -907,8 +870,13 @@ img.footer-logo{
         .switch-view-list{
             display: none;
         }
-        #posts-list .title{
-            font-size: 18px;
-            font-weight: normal;
+        .mean-posts .item{
+            padding: 0 5px;
+        }
+        .mean-posts{
+            padding: 0 15px;
+        }
+        .row{
+            margin: 0;
         }
 }
