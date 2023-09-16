@@ -617,6 +617,14 @@ img.footer-logo{
 .switch-view-list i:hover{
     color: black;
 }
+/* display grid */
+.grid .list-items .small,
+.grid .list-items .detail{
+    display: none;
+}
+.grid .tumbnail{
+    padding: 0;
+}
 
 /*========================================================== Responsive*/
 @media (min-width: 1200px) {
