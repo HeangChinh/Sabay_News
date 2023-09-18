@@ -286,44 +286,5 @@
                 content.classList.remove('col-md-8');
             });
         }
-        function View(responsive){
-            if(responsive.matches){
-                grid.parentElement.classList.add('active');
-                list.parentElement.classList.remove('active');
-                switchList.className = 'grid';
-                listItems.classList.add('row');
-                
-                listItem.forEach((listItem) => {
-                    listItem.classList.remove('row');
-                    listItem.classList.add('col-md-4', 'col-xs-6');
-                });
-                tumbnail.forEach((tumbnail) => {
-                    tumbnail.classList.remove('col-md-4');
-                });
-                content.forEach(content => {
-                    content.classList.remove('col-md-8');
-                });
-            }else{
-                list.parentElement.classList.add('active');
-                grid.parentElement.classList.remove('active');
-                switchList.className = 'list';
-                listItems.classList.remove('row');
-
-                listItem.forEach((listItem) => {
-                    listItem.classList.add('row');
-                    listItem.classList.remove('col-md-4', 'col-xs-6');
-                });
-
-                tumbnail.forEach((tumbnail) => {
-                    tumbnail.classList.add('col-md-4');
-                });
-                content.forEach(content => {
-                    content.classList.add('col-md-8');
-                });
-                }
-        }
-        const responsive = window.matchMedia('(max-width: 768px)');
-        View(responsive);
-        responsive.addListener(View);
     </script>
 </body>
