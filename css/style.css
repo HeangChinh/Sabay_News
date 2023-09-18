@@ -585,6 +585,8 @@ img.footer-logo{
 }
 .list-items .list-item{
     margin-bottom: 15px;
+    max-height: 240px;
+    overflow: hidden;
 }
 .list-items .row > *{
     padding: 0;
@@ -946,8 +948,7 @@ img.footer-logo{
         }
         .grid .list-items .list-item {
             padding: 0 5px;
-            max-height: 240px;
-            overflow: hidden;
+            
         }
         .grid .list-items .list-item::after{
             content: '';
