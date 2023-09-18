@@ -558,10 +558,10 @@ img.footer-logo{
 .mean-posts{
     margin-bottom: 30px;
 }
-#posts-list .item .title{
+#posts-list .title{
     font-size: 18px;
-    font-weight: 600;
-    line-height: 26px;
+    font-weight: bold;
+    line-height: 24px;
 }
 .mean-posts .item .title{
     margin: 10px 0;
@@ -625,6 +625,20 @@ img.footer-logo{
 .grid .tumbnail{
     padding: 0;
 }
+.grid .content{
+    padding-left: 0;
+}
+#posts-list.grid .list-items .title{
+    font-size: 16px;
+    margin: 5px 0;
+}
+.grid .list-items{
+    padding: 0 5px;
+}
+.grid .list-items .list-item {
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
 
 /*========================================================== Responsive*/
 @media (min-width: 1200px) {
@@ -662,7 +676,6 @@ img.footer-logo{
     }
     .tumbnail{
         padding-right: 15px;
-        margin-bottom: 10px;
     }
 }
 @media (max-width: 992px) {
@@ -674,6 +687,9 @@ img.footer-logo{
     }
     .hot-news-items .item{
         padding: 0 5px;
+    }
+    .col-xs-6{
+        width: 50%;
     }
 }
 @media (min-width: 768px) {
@@ -895,7 +911,7 @@ img.footer-logo{
             width: 100%;
             text-align: center;
         }
-        /* Entertainment page*/
+        /* Entertainment page for mobile */
         .col-sm-6{
             width: 50%;
         }
@@ -924,5 +940,21 @@ img.footer-logo{
         .row{
             margin: 0;
         }
-
+        .grid .list-items{
+            padding: 0 15px;
+            position: relative;
+        }
+        .grid .list-items .list-item {
+            padding: 0 5px;
+            max-height: 240px;
+            overflow: hidden;
+        }
+        .grid .list-items .list-item::after{
+            content: '';
+            display: block;
+            padding-bottom: 31.7px;
+        }
+        #posts-list.grid .list-items .title{
+            font-size: 17px;
+        }
 }
