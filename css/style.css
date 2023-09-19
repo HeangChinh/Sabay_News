@@ -68,38 +68,68 @@ ul{
 #menu .nav{
     display: block;
 }
-#menu .nav li a{
+#menu .navbar-collapse li a{
     float: left;
     height: 50px;
     padding: 10px 15px;
+    font-size: 18px;
+    background-color: #fa1939;
 }
-#menu .nav a{
+#menu .navbar-collapse a{
     line-height: 1.7;
     letter-spacing: 0.01px;
     color: rgba(255, 255, 255, 0.8);
 }
-#menu .nav .category a{
+#menu .navbar-collapse .category a{
     font-family: 'Koulen', Arial, Helvetica, sans-serif;
 }
-#menu .nav .tag a{
+#menu .navbar-collapse .tag a{
     font-family: Arial, Helvetica, sans-serif
 }
-#menu .nav li a:hover{
+#menu .navbar-collapse li a:hover{
     color: #ffffff;
     background-color: #fa1939;
     transition: 0.3s;
 }
-#menu .nav .activehome a{
+#menu .navbar-collapse .activehome a{
     background-color: #D90C16;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     color: #ffffff;
 }
-#menu .nav .activehome a:hover{
+#menu .navbar-collapse .activehome a:hover{
     background-color: #D90C16;
 }
-#menu .nav .more{
+/* dropdowm list */
+#menu .more-dropdown{
     display: none;
     cursor: pointer;
+}
+#menu .more-dropdown .show{
+    background-color: #000000;
+}
+#menu .more-dropdown .show:hover{
+    background-color: #000000;
+}
+#menu .dropdown-menu.show{
+    padding: 0;
+    min-width: 160px;
+    border: none;
+    border-radius: 0;
+    transform: translate3d(427px, 51px, 0px) !important;
+    background-color: #fff;
+}
+#menu .dropdown-menu.show:hover{
+    background-color: #fff;
+}
+#menu .dropdown-menu.show a{
+    width: 100%;
+}
+#menu .dropdown-menu.show a:hover{
+    background-color: #D90C16;
+    color: rgba(255, 255, 255, 0.8);
+}
+#menu .dropdown-menu.show li:first-child a{
+    margin-bottom: 1px;
 }
 
 /*======================================= Mean Content*/
@@ -579,7 +609,7 @@ img.footer-logo{
     width: 55px;
     height: 100%;
     padding-bottom: 5px;
-    border-bottom: 3.5px solid #E4242C;
+    border-bottom: 3px solid #E4242C;
 }
 /* right content */
 .right-content .media{
@@ -588,6 +618,7 @@ img.footer-logo{
 .right-content .right-detail{
     color: #444444;
     float: right;
+    font-size: 16px;
     width: calc(100% - 50px);
     font-weight: bold;
     line-height: 22px;
@@ -621,7 +652,7 @@ img.footer-logo{
     margin-bottom: 10px;
 }
 .list-items .small{
-    font-size: 15px;
+    font-size: 15   px;
     font-weight: normal;
     border-bottom: 1px solid #e2e2e2;
 }
@@ -807,8 +838,10 @@ img.footer-logo{
     }
     /* end tab news of mobile */
 
-
     #menu{
+        background-color: #000000;
+    }
+    #menu .navbar-collapse li a{
         background-color: #000000;
     }
     /*=================== Navbar Page*/
