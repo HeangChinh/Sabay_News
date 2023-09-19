@@ -554,6 +554,55 @@ img.footer-logo{
 #entertainment .tab-content{
     padding: 0;
 }
+/* Right content */
+.right-content{
+    float: right;
+    width: 300px;
+    height: 100%;
+    margin-top: 15px;
+}
+.right-content .right-ads img{
+    width: 300px;
+    margin-bottom: 15px;
+}
+.right-paragraph{
+    color: #444444;
+}
+.right-paragraph .title{
+    font-family: 'Koulen', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.right-paragraph .title::after{
+    content: '';
+    display: block;
+    width: 55px;
+    height: 100%;
+    padding-bottom: 5px;
+    border-bottom: 3.5px solid #E4242C;
+}
+/* right content */
+.right-content .media{
+    margin-bottom: 20px;
+}
+.right-content .right-detail{
+    color: #444444;
+    float: right;
+    width: calc(100% - 50px);
+    font-weight: bold;
+    line-height: 22px;
+}
+.right-content .box{
+    float: left;
+    width: 50px;
+    height: 40px;
+    padding-top: 0;
+}
+.right-content .img-load{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
 /* tab-content */
 .mean-posts{
     margin-bottom: 30px;
@@ -957,5 +1006,8 @@ img.footer-logo{
         }
         #posts-list.grid .list-items .title{
             font-size: 17px;
+        }
+        .right-content{
+            display: none;
         }
 }
