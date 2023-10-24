@@ -169,7 +169,7 @@ ul{
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgb(0 0 0 / 0.5) );    
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgb(0 0 0 / 0.4) );    
 }
 /* when hover on feature post */
 .feature-post .row .overlay{
@@ -196,7 +196,6 @@ ul{
 }
 .feature-post .row .mean-decription .decription .title{
     font-size: 20px;
-    letter-spacing: -1px;
     font-weight: bold;
     margin: 10px 0;
     line-height: 30px;
@@ -248,6 +247,8 @@ ul{
     float: right;
     width: 300px;
     height: 508px;
+    display: flex;
+    flex-wrap: wrap;
 }
 #top-right-ads .ads-item:first-child{
     margin-bottom: 8px;
